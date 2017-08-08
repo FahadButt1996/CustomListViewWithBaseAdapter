@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:context="com.example.mfahad.customlistview.MainActivity">
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="First Name"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/lname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fname"
+        android:layout_alignStart="@+id/fname"
+        android:layout_below="@+id/fname"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:hint="Last Name" />
+
+    <EditText
+        android:id="@+id/designation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lname"
+        android:layout_alignStart="@+id/lname"
+        android:layout_below="@+id/lname"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Designation"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/designation"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="23dp"
+        android:text="Insert" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/insert"
+        android:id="@+id/listView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="5dp"/>
+</RelativeLayout>
